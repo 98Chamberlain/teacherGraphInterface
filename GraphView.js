@@ -357,7 +357,7 @@ GraphView.prototype.updateStarPointView = function(startPointViewList){
         $(containerSelector).hover(function () { this.lastElementChild.setAttribute("style", "display:block;"); },
             function () { this.lastElementChild.setAttribute("style", "display:none;"); })
     }
-    $("#recommend-container")[0].innerHTML = "";    
+    $("#recommend-container")[0].innerHTML = "";
     if (!startPointViewList){
         if(!this.graphDataSource.curEmail){
             $("#recommend-container").append("<div style=\"padding-left: 20px;\">請先選擇學生，即可看到推薦起始點嘍。</div>");
